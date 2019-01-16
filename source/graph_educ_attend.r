@@ -1,0 +1,4 @@
+load("../data/time_series.Rdata")
+
+print(ggplot(educ_attend[school == 1 & sample != "urban9"], aes(x = sample, y = p, fill = educ_age)) + geom_bar(stat = "identity", position = position_dodge()) + facet_wrap(~ year) + ggtitle("education attendance") + labs(x = "", y = "", fill = "age group") + scale_x_discrete(labels = c("all", "rural", "urban")) + scale_fill_manual(values = graphing_palette[2:5]))
+print(ggplot(d_educ_attend[!is.na(d_share) & school == 1 & sample != "urban9"], aes(x = sample, y = d_share, fill = educ_age)) + geom_bar(stat = "identity", position = position_dodge()) + facet_wrap(~ end_year) + ggtitle("change in education attendance") + labs(x = "", y = "", fill = "age group") + scale_x_discrete(labels = c("all", "rural", "urban")) + scale_fill_manual(values = graphing_palette[2:5]))
