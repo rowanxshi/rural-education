@@ -1,0 +1,2179 @@
+Description: Revision of 00001
+Samples selected:
+      Honduras 1974
+            Note: 
+            Density of the full data file:  10.0%
+            Density of your extract: 10.0%
+
+      Honduras 1988
+            Note: 
+            Density of the full data file:  10.0%
+            Density of your extract: 10.0%
+
+      Honduras 2001
+            Note: 
+            Density of the full data file:  10.0%
+            Density of your extract: 10.0%
+
+File Type:                    rectangular
+Case Selection:               No
+  Variable               Columns        Len    HN74    HN88    HN01   
+  COUNTRY            H   1-3            3      X       X       X 
+  YEAR               H   4-7            4      X       X       X 
+  SAMPLE             H   8-16           9      X       X       X 
+  SERIAL             H  17-28          12      X       X       X 
+  HHWT               H  29-36           8      X       X       X 
+  URBAN              H  37              1      X       X       X 
+  GEOLEV1            H  38-43           6      X       X       X 
+  GEOLEV2            H  44-52           9      X       X       X 
+  GEO1_HN            H  53-58           6      X       X       X 
+  GEO2_HN            H  59-67           9      X       X       X 
+  PERNUM             P  68-71           4      X       X       X 
+  PERWT              P  72-79           8      X       X       X 
+  AGE                P  80-82           3      X       X       X 
+  AGE2               P  83-84           2      X       X       X 
+  SEX                P  85              1      X       X       X 
+  MARST              P  86              1      X       X       X 
+  MARSTD             P  87-89           3      X       X       X 
+  CONSENS            P  90              1      X       X       X 
+  BIRTHYR            P  91-94           4      .       X       . 
+  BIRTHMO            P  95-96           2      .       X       . 
+  NATIVITY           P  97              1      X       X       X 
+  BPLCOUNTRY         P  98-102          5      X       X       X 
+  CITIZEN            P 103              1      X       .       . 
+  BPLHN1             P 104-105          2      X       X       X 
+  BPLHN2             P 106-109          4      X       X       X 
+  SCHOOL             P 110              1      X       X       X 
+  LIT                P 111              1      .       X       X 
+  EDATTAIN           P 112              1      X       X       X 
+  EDATTAIND          P 113-115          3      X       X       X 
+  YRSCHOOL           P 116-117          2      X       X       X 
+  EDUCHN             P 118-120          3      X       X       X 
+
+Variable Availability Key:
+All Years X - available in this sample
+All Years . - not available in this sample
+
+
+ COUNTRY		Country
+032		Argentina
+051		Armenia
+040		Austria
+050		Bangladesh
+112		Belarus
+068		Bolivia
+072		Botswana
+076		Brazil
+854		Burkina Faso
+116		Cambodia
+120		Cameroon
+124		Canada
+152		Chile
+156		China
+170		Colombia
+188		Costa Rica
+192		Cuba
+208		Denmark
+214		Dominican Republic
+218		Ecuador
+818		Egypt
+222		El Salvador
+231		Ethiopia
+242		Fiji
+250		France
+276		Germany
+288		Ghana
+300		Greece
+324		Guinea
+332		Haiti
+348		Hungary
+352		Iceland
+356		India
+360		Indonesia
+364		Iran
+368		Iraq
+372		Ireland
+376		Israel
+380		Italy
+388		Jamaica
+400		Jordan
+404		Kenya
+417		Kyrgyz Republic
+430		Liberia
+454		Malawi
+458		Malaysia
+466		Mali
+484		Mexico
+496		Mongolia
+504		Morocco
+508		Mozambique
+524		Nepal
+528		Netherlands
+558		Nicaragua
+566		Nigeria
+578		Norway
+586		Pakistan
+275		Palestine
+591		Panama
+600		Paraguay
+604		Peru
+608		Philippines
+616		Poland
+620		Portugal
+630		Puerto Rico
+642		Romania
+646		Rwanda
+662		Saint Lucia
+686		Senegal
+694		Sierra Leone
+705		Slovenia
+710		South Africa
+728		South Sudan
+724		Spain
+729		Sudan
+752		Sweden
+756		Switzerland
+834		Tanzania
+764		Thailand
+780		Trinidad and Tobago
+792		Turkey
+800		Uganda
+804		Ukraine
+826		United Kingdom
+840		United States
+858		Uruguay
+862		Venezuela
+704		Vietnam
+894		Zambia
+204		Benin
+340		Honduras
+426		Lesotho
+598		Papua New Guinea
+716		Zimbabwe
+
+ YEAR		Year
+1703		1703
+1729		1729
+1787		1787
+1801		1801
+1819		1819
+1850		1850
+1851		1851
+1852		1852
+1860		1860
+1861		1861
+1865		1865
+1870		1870
+1871		1871
+1875		1875
+1880		1880
+1881		1881
+1890		1890
+1891		1891
+1900		1900
+1901		1901
+1910		1910
+1911		1911
+1960		1960
+1961		1961
+1962		1962
+1963		1963
+1964		1964
+1966		1966
+1968		1968
+1969		1969
+1970		1970
+1971		1971
+1972		1972
+1973		1973
+1974		1974
+1975		1975
+1976		1976
+1977		1977
+1978		1978
+1979		1979
+1980		1980
+1981		1981
+1982		1982
+1983		1983
+1984		1984
+1985		1985
+1986		1986
+1987		1987
+1989		1989
+1990		1990
+1991		1991
+1992		1992
+1993		1993
+1994		1994
+1995		1995
+1996		1996
+1997		1997
+1998		1998
+1999		1999
+2000		2000
+2001		2001
+2002		2002
+2003		2003
+2004		2004
+2005		2005
+2006		2006
+2007		2007
+2008		2008
+2009		2009
+2010		2010
+2011		2011
+2012		2012
+2013		2013
+2014		2014
+2015		2015
+
+ SAMPLE		IPUMS sample identifier
+032197001		Argentina 1970
+032198001		Argentina 1980
+032199101		Argentina 1991
+032200101		Argentina 2001
+032201001		Argentina 2010
+051200101		Armenia 2001
+051201101		Armenia 2011
+040197101		Austria 1971
+040198101		Austria 1981
+040199101		Austria 1991
+040200101		Austria 2001
+040201101		Austria 2011
+050199101		Bangladesh 1991
+050200101		Bangladesh 2001
+050201101		Bangladesh 2011
+112199901		Belarus 1999
+112200901		Belarus 2009
+068197601		Bolivia 1976
+068199201		Bolivia 1992
+068200101		Bolivia 2001
+072198101		Botswana 1981
+072199101		Botswana 1991
+072200101		Botswana 2001
+072201101		Botswana 2011
+076196001		Brazil 1960
+076197001		Brazil 1970
+076198001		Brazil 1980
+076199101		Brazil 1991
+076200001		Brazil 2000
+076201001		Brazil 2010
+854198501		Burkina Faso 1985
+854199601		Burkina Faso 1996
+854200601		Burkina Faso 2006
+116199801		Cambodia 1998
+116200801		Cambodia 2008
+120197601		Cameroon 1976
+120198701		Cameroon 1987
+120200501		Cameroon 2005
+124185201		Canada 1852
+124187101		Canada 1871
+124188101		Canada 1881
+124189101		Canada 1891
+124190101		Canada 1901
+124191101		Canada 1911
+124197101		Canada 1971
+124198101		Canada 1981
+124199101		Canada 1991
+124200101		Canada 2001
+124201101		Canada 2011
+152196001		Chile 1960
+152197001		Chile 1970
+152198201		Chile 1982
+152199201		Chile 1992
+152200201		Chile 2002
+156198201		China 1982
+156199001		China 1990
+156200001		China 2000
+170196401		Colombia 1964
+170197301		Colombia 1973
+170198501		Colombia 1985
+170199301		Colombia 1993
+170200501		Colombia 2005
+188196301		Costa Rica 1963
+188197301		Costa Rica 1973
+188198401		Costa Rica 1984
+188200001		Costa Rica 2000
+188201101		Costa Rica 2011
+192200201		Cuba 2002
+208178701		Denmark 1787
+208180101		Denmark 1801
+214196001		Dominican Republic 1960
+214197001		Dominican Republic 1970
+214198101		Dominican Republic 1981
+214200201		Dominican Republic 2002
+214201001		Dominican Republic 2010
+218196201		Ecuador 1962
+218197401		Ecuador 1974
+218198201		Ecuador 1982
+218199001		Ecuador 1990
+218200101		Ecuador 2001
+218201001		Ecuador 2010
+818198601		Egypt 1986
+818199601		Egypt 1996
+818200601		Egypt 2006
+222199201		El Salvador 1992
+222200701		El Salvador 2007
+231198401		Ethiopia 1984
+231199401		Ethiopia 1994
+231200701		Ethiopia 2007
+242196601		Fiji 1966
+242197601		Fiji 1976
+242198601		Fiji 1986
+242199601		Fiji 1996
+242200701		Fiji 2007
+250196201		France 1962
+250196801		France 1968
+250197501		France 1975
+250198201		France 1982
+250199001		France 1990
+250199901		France 1999
+250200601		France 2006
+250201101		France 2011
+276181901		Germany 1819 (Mecklenburg)
+276197001		Germany 1970 (West)
+276197101		Germany 1971 (East)
+276198101		Germany 1981 (East)
+276198701		Germany 1987 (West)
+288198401		Ghana 1984
+288200001		Ghana 2000
+288201001		Ghana 2010
+300197101		Greece 1971
+300198101		Greece 1981
+300199101		Greece 1991
+300200101		Greece 2001
+300201101		Greece 2011
+324198301		Guinea 1983
+324199601		Guinea 1996
+332197101		Haiti 1971
+332198201		Haiti 1982
+332200301		Haiti 2003
+348197001		Hungary 1970
+348198001		Hungary 1980
+348199001		Hungary 1990
+348200101		Hungary 2001
+348201101		Hungary 2011
+352170301		Iceland 1703
+352172901		Iceland 1729
+352180101		Iceland 1801
+352190101		Iceland 1901
+352191001		Iceland 1910
+356198341		India 1983
+356198741		India 1987
+356199341		India 1993
+356199941		India 1999
+356200441		India 2004
+356200941		India 2009
+360197101		Indonesia 1971
+360197601		Indonesia 1976
+360198001		Indonesia 1980
+360198501		Indonesia 1985
+360199001		Indonesia 1990
+360199501		Indonesia 1995
+360200001		Indonesia 2000
+360200501		Indonesia 2005
+360201001		Indonesia 2010
+364200601		Iran 2006
+364201101		Iran 2011
+368199701		Iraq 1997
+372197101		Ireland 1971
+372197901		Ireland 1979
+372198101		Ireland 1981
+372198601		Ireland 1986
+372199101		Ireland 1991
+372199601		Ireland 1996
+372200201		Ireland 2002
+372200601		Ireland 2006
+372201101		Ireland 2011
+376197201		Israel 1972
+376198301		Israel 1983
+376199501		Israel 1995
+380200101		Italy 2001
+388198201		Jamaica 1982
+388199101		Jamaica 1991
+388200101		Jamaica 2001
+400200401		Jordan 2004
+404196901		Kenya 1969
+404197901		Kenya 1979
+404198901		Kenya 1989
+404199901		Kenya 1999
+404200901		Kenya 2009
+417199901		Kyrgyz Republic 1999
+417200901		Kyrgyz Republic 2009
+430197401		Liberia 1974
+430200801		Liberia 2008
+454198701		Malawi 1987
+454199801		Malawi 1998
+454200801		Malawi 2008
+458197001		Malaysia 1970
+458198001		Malaysia 1980
+458199101		Malaysia 1991
+458200001		Malaysia 2000
+466198701		Mali 1987
+466199801		Mali 1998
+466200901		Mali 2009
+484196001		Mexico 1960
+484197001		Mexico 1970
+484199001		Mexico 1990
+484199501		Mexico 1995
+484200001		Mexico 2000
+484200501		Mexico 2005
+484201001		Mexico 2010
+484201501		Mexico 2015
+496198901		Mongolia 1989
+496200001		Mongolia 2000
+504198201		Morocco 1982
+504199401		Morocco 1994
+504200401		Morocco 2004
+508199701		Mozambique 1997
+508200701		Mozambique 2007
+524200101		Nepal 2001
+528196001		Netherlands 1960
+528197101		Netherlands 1971
+528200101		Netherlands 2001
+558197101		Nicaragua 1971
+558199501		Nicaragua 1995
+558200501		Nicaragua 2005
+566200621		Nigeria 2006
+566200721		Nigeria 2007
+566200821		Nigeria 2008
+566200921		Nigeria 2009
+566201021		Nigeria 2010
+578180101		Norway 1801
+578186501		Norway 1865
+578187501		Norway 1875
+578190001		Norway 1900
+578191001		Norway 1910
+586197301		Pakistan 1973
+586198101		Pakistan 1981
+586199801		Pakistan 1998
+275199701		Palestine 1997
+275200701		Palestine 2007
+591196001		Panama 1960
+591197001		Panama 1970
+591198001		Panama 1980
+591199001		Panama 1990
+591200001		Panama 2000
+591201001		Panama 2010
+600196201		Paraguay 1962
+600197201		Paraguay 1972
+600198201		Paraguay 1982
+600199201		Paraguay 1992
+600200201		Paraguay 2002
+604199301		Peru 1993
+604200701		Peru 2007
+608199001		Philippines 1990
+608199501		Philippines 1995
+608200001		Philippines 2000
+616197801		Poland 1978
+616198801		Poland 1988
+616200201		Poland 2002
+616201101		Poland 2011
+620198101		Portugal 1981
+620199101		Portugal 1991
+620200101		Portugal 2001
+620201101		Portugal 2011
+630197001		Puerto Rico 1970
+630198001		Puerto Rico 1980
+630199001		Puerto Rico 1990
+630200001		Puerto Rico 2000
+630200501		Puerto Rico 2005
+630201001		Puerto Rico 2010
+642197701		Romania 1977
+642199201		Romania 1992
+642200201		Romania 2002
+642201101		Romania 2011
+646199101		Rwanda 1991
+646200201		Rwanda 2002
+662198001		Saint Lucia 1980
+662199101		Saint Lucia 1991
+686198801		Senegal 1988
+686200201		Senegal 2002
+694200401		Sierra Leone 2004
+705200201		Slovenia 2002
+710199601		South Africa 1996
+710200101		South Africa 2001
+710200701		South Africa 2007
+710201101		South Africa 2011
+728200801		South Sudan 2008
+724198101		Spain 1981
+724199101		Spain 1991
+724200101		Spain 2001
+724201101		Spain 2011
+729200801		Sudan 2008
+752188001		Sweden 1880
+752189001		Sweden 1890
+752190001		Sweden 1900
+752191001		Sweden 1910
+756197001		Switzerland 1970
+756198001		Switzerland 1980
+756199001		Switzerland 1990
+756200001		Switzerland 2000
+834198801		Tanzania 1988
+834200201		Tanzania 2002
+834201201		Tanzania 2012
+764197001		Thailand 1970
+764198001		Thailand 1980
+764199001		Thailand 1990
+764200001		Thailand 2000
+780197001		Trinidad and Tobago 1970
+780198001		Trinidad and Tobago 1980
+780199001		Trinidad and Tobago 1990
+780200001		Trinidad and Tobago 2000
+780201101		Trinidad and Tobago 2011
+792198501		Turkey 1985
+792199001		Turkey 1990
+792200001		Turkey 2000
+800199101		Uganda 1991
+800200201		Uganda 2002
+804200101		Ukraine 2001
+826185101		United Kingdom 1851 (England and Wales)
+826185102		United Kingdom 1851 (Scotland)
+826185103		United Kingdom 1851 (2% sample)
+826186101		United Kingdom 1861 (England and Wales)
+826186102		United Kingdom 1861 (Scotland)
+826187101		United Kingdom 1871 (Scotland)
+826188101		United Kingdom 1881 (England and Wales)
+826188102		United Kingdom 1881 (Scotland)
+826189101		United Kingdom 1891 (England and Wales)
+826189102		United Kingdom 1891 (Scotland)
+826190101		United Kingdom 1901 (England and Wales)
+826190102		United Kingdom 1901 (Scotland)
+826191101		United Kingdom 1911 (England and Wales)
+826199101		United Kingdom 1991
+826200101		United Kingdom 2001
+840185001		United States 1850 (100%)
+840185002		United States 1850 (1%)
+840186001		United States 1860 (1%)
+840187001		United States 1870 (1%)
+840188001		United States 1880 (100%)
+840188002		United States 1880 (10%)
+840190001		United States 1900 (5%)
+840191001		United States 1910 (1%)
+840196001		United States 1960
+840197001		United States 1970
+840198001		United States 1980
+840199001		United States 1990
+840200001		United States 2000
+840200501		United States 2005
+840201001		United States 2010
+858196301		Uruguay 1963
+858196302		Uruguay 1963 (full count)
+858197501		Uruguay 1975
+858197502		Uruguay 1975 (full count)
+858198501		Uruguay 1985
+858198502		Uruguay 1985 (full count)
+858199601		Uruguay 1996
+858199602		Uruguay 1996 (full count)
+858200621		Uruguay 2006
+858201101		Uruguay 2011
+858201102		Uruguay 2011 (full count)
+862197101		Venezuela 1971
+862198101		Venezuela 1981
+862199001		Venezuela 1990
+862200101		Venezuela 2001
+704198901		Vietnam 1989
+704199901		Vietnam 1999
+704200901		Vietnam 2009
+894199001		Zambia 1990
+894200001		Zambia 2000
+894201001		Zambia 2010
+204197901		Benin 1979
+204199201		Benin 1992
+204200201		Benin 2002
+204201301		Benin 2013
+340196101		Honduras 1961
+340197401		Honduras 1974
+340198801		Honduras 1988
+340200101		Honduras 2001
+380201101		Italy 2011
+426199601		Lesotho 1996
+426200601		Lesotho 2006
+528201101		Netherlands 2011
+608201001		Philippines 2010
+598198001		Papua New Guinea 1980
+598199001		Papua New Guinea 1990
+598200001		Papua New Guinea 2000
+598201101		Papua New Guinea 2011
+646201201		Rwanda 2012
+840201501		United States 2015
+716201201		Zimbabwe 2012
+
+ URBAN		Urban-rural status
+1		Rural
+2		Urban
+9		Unknown
+
+ GEO1_HN		Honduras, Department 1961 - 2001 [Level 1; consistent boundaries, GIS]
+340001		Atlántida
+340002		Colón
+340003		Comayagua
+340004		Copán
+340005		Cortés
+340006		Choluteca
+340007		El Paraíso
+340008		Francisco Morazán
+340009		Gracias a Dios
+340010		Intibucá
+340011		Islas de la Bahía
+340012		La Paz
+340013		Lempira
+340014		Ocotepeque
+340015		Olancho
+340016		Santa Bárbara
+340017		Valle
+340018		Yoro
+340099		Unknown
+
+ GEO2_HN		Honduras, Municipality 1961 - 2001 [Level 2; consistent boundaries, GIS]
+		Atlántida
+340001001		La Ceiba, Jutiapa
+340001002		Arizona, Tela
+340001003		Esparta, La Masica
+340001005		El Porvenir, San Francisco
+		Colón
+340002001		Balfate, Bonito Oriental, Santa Fé, Santa Rosa de Aguán, Trujillo, Iriona, Limón
+340002002		Sabá, Sonaguera
+340002003		Tocoa
+		Comayagua
+340003001		Ajuterique, Comayagua, Lejamaní
+340003002		San José de Comayagua, Siguatepeque, Taulabe
+340003003		La Libertad, La Trinidad, Las Lajas, Meámbar, Ojos de Agua
+340003004		Esquias, Minas de Oro, San José del Potrero, San Luis
+340003005		El Rosario, San Jerónimo
+340003006		Humuya, Lamaní, San Sebastián, Villa de San Antonio
+		Copán
+340004001		Dolores, Dulce Nombre, San Juan de Opoa, Santa Rosa de Copan
+340004002		El Paraíso, Florida, La Jigua
+340004003		Cabañas, Copan Ruinas
+340004004		San Antonio, San José, San Nicolás, Trinidad de Copan, Veracruz
+340004005		Nueva Arcadia
+340004006		Corquín, Cucuyagua, San Pedro
+340004007		Concepción, La Unión, San Agustín, San Jerónimo
+340004008		Santa Rita
+		Cortés
+340005001		La Lima, San Pedro Sula, Omoa
+340005002		Choloma
+340005003		Puerto Cortés
+340005004		Villanueva
+340005005		Santa Cruz de Yojoa
+340005006		San Antonio de Cortés, San Francisco de Yojoa
+340005008		San Manuel
+340005009		Pimienta, Potrerillos
+		Choluteca
+340006001		Choluteca, Orocuina
+340006002		Marcovia
+340006003		Apacilagua, Duyure, Morolica, San Marcos de Colón
+340006004		Pespire, San Antonio de Flores, San Isidro, San José
+340006005		Namasigue, Santa Ana de Yusguare
+340006006		El Triunfo
+340006007		Concepción de Maria
+340006008		El Corpus
+		El Paraíso
+340007001		Alauca, Danlí, San Matias, Trojes
+340007002		Guinope, Jacaleapa, Morocelí, Oropolí, Potrerillos, San Antonio de Flores, Yuscarán
+340007003		Liure, San Lucas, Soledad, Texiguat, Vado Ancho, Yauyupe
+340007004		El Paraíso
+340007005		Teupasenti
+		Francisco Morazán
+340008001		Distrito Central, Lepaterique, Ojojona
+340008002		Guaimaca, Marale, Orica, San Ignacio
+340008003		Alubarén, Curarén, La Libertad, La Venta, Reitoca, San Miguelito
+340008004		Cedros, El Porvenir, Vallecillo
+340008005		San Juan de Flores, Talanga
+340008006		Maraita, Nueva Armenia, San Antonio de Oriente, San Buenaventura, Tatumbla
+340008007		Santa Lucía, Valle de Ángeles, Villa de San Francisco
+340008008		Sabánagrande, Santa Ana
+		Gracias a Dios
+340009001		Ahuas, Brus Laguna, Juan Francisco Bulnes, Puerto Lempira, Villeda Morales, Wampusirpi
+340009099		Gracias a Dios department, unknown municipality
+		Intibucá
+340010001		Intibucá, Masaguara
+340010002		Camasca, Colomoncagua, Concepción, Magdalena, San Antonio, Santa Lucía
+340010003		Dolores, La Esperanza, San Marcos de La Sierra, Yamaranguila, San Francisco de Opalaca, San Juan, San Miguelito
+340010004		Jesús de Otoro, San Isidro
+		Islas de la Bahía
+340011001		Guanaja, José Santos Guardiola, Roatán, Utila
+		La Paz
+340012001		Aguánqueterique, Cabañas, Guajiquiro, Lauterique, Mercedes de Oriente, Opatoro, San Antonio del Norte, San Juan, Santa Ana
+340012002		Chinacla, Marcala, Santa Elena, Yarula
+340012003		Cane, La Paz, San Pedro de Tutule
+340012004		San José, Santa María, Santiago de Puringla
+340012099		La Paz department, unkown municipality
+		Lempira
+340013001		Gracias, La Iguala, San Manuel Colohete
+340013002		Las Flores, Lepaera, Talgua
+340013003		Belen, Cololaca, La Campa, San Marcos de Caiquín, San Sebastián, Santa Cruz
+340013004		Candelaria, Mapulaca, Piraera, San Francisco, Virginia
+340013005		Gualcince, Guarita, La Virtud, San Juan Guarita, Valladolid
+340013006		Erandique, San Andrés, Tambla, Tomalá
+340013007		La Unión, San Rafael
+		Ocotepeque
+340014001		Belen Gualcho, Mercedes, San Marcos
+340014003		Ocotepeque, Sinuapa, Concepción, Dolores Merendon, Fraternidad, La Encarnación, Lucerna, San Férnando, San Jorge, Santa Fé
+340014004		La Labor, San Francisco del Valle, Sensenti
+		Olancho
+340015001		Campamento, Juticalpa, Patuca, San Francisco de Becerra, Silca
+340015002		Catacamas, Dulce Nombre de Culmí
+340015003		Gualaco, San Esteban
+340015004		Guarizama, San Francisco de La Paz, Santa María del Real
+340015005		Concordia, El Rosario, Guayape, Yocón, Esquipulas del Norte, La Unión, Mangulile
+340015006		Guata, Jano, Manto, Salamá
+		Santa Bárbara
+340016001		Azacualpa, Macuelizo, Nueva Frontera, Protección
+340016002		Arada, El Nispero, San Nicolás, San Vicente Centenario, Santa Bárbara
+340016003		Ceguaca, Concepción del Sur, Las Vegas, San Francisco de Ojuera, San Pedro Zacapa, Santa Rita
+340016004		Gualala, San José de Colinas, Trinidad
+340016005		Nuevo Celilac, San Luis
+340016006		Quimistán
+340016007		Atima, Naranjito
+340016008		Petoa, San Marcos
+340016009		Chinda, Concepción del Norte, Ilama
+		Valle
+340017001		Amapala, Nacaome
+340017002		Alianza, Aramecina, Caridad, Goascorán
+340017003		Langue, San Francisco de Coray
+340017004		San Lorenzo
+		Yoro
+340018001		El Progreso, Santa Rita
+340018002		Olanchito
+340018003		Arenal, Jocón, Yoro
+340018004		El Negrito
+340018005		Morazán
+340018006		Sulaco, Yorito
+340018007		Victoria
+340099099		Unknown
+
+ AGE		Age
+000		Less than 1 year
+001		1 year
+002		2 years
+003		3
+004		4
+005		5
+006		6
+007		7
+008		8
+009		9
+010		10
+011		11
+012		12
+013		13
+014		14
+015		15
+016		16
+017		17
+018		18
+019		19
+020		20
+021		21
+022		22
+023		23
+024		24
+025		25
+026		26
+027		27
+028		28
+029		29
+030		30
+031		31
+032		32
+033		33
+034		34
+035		35
+036		36
+037		37
+038		38
+039		39
+040		40
+041		41
+042		42
+043		43
+044		44
+045		45
+046		46
+047		47
+048		48
+049		49
+050		50
+051		51
+052		52
+053		53
+054		54
+055		55
+056		56
+057		57
+058		58
+059		59
+060		60
+061		61
+062		62
+063		63
+064		64
+065		65
+066		66
+067		67
+068		68
+069		69
+070		70
+071		71
+072		72
+073		73
+074		74
+075		75
+076		76
+077		77
+078		78
+079		79
+080		80
+081		81
+082		82
+083		83
+084		84
+085		85
+086		86
+087		87
+088		88
+089		89
+090		90
+091		91
+092		92
+093		93
+094		94
+095		95
+096		96
+097		97
+098		98
+099		99
+100		100+
+999		Not reported/missing
+
+ AGE2		Age, grouped into intervals
+01		0 to 4
+02		5 to 9
+03		10 to 14
+04		15 to 19
+		Inconsistent groupings
+05		15 to 17
+06		18 to 19
+07		18 to 24
+08		20 to 24
+09		25 to 29
+10		30 to 34
+11		35 to 39
+12		40 to 44
+13		45 to 49
+14		50 to 54
+15		55 to 59
+16		60 to 64
+17		65 to 69
+18		70 to 74
+19		75 to 79
+20		80+
+98		Unknown
+99		NIU (not in universe)
+
+ SEX		Sex
+1		Male
+2		Female
+9		Unknown
+
+ MARST		Marital status [general version]
+0		NIU (not in universe)
+1		Single/never married
+2		Married/in union
+3		Separated/divorced/spouse absent
+4		Widowed
+9		Unknown/missing
+
+ MARSTD		Marital status [detailed version]
+000		NIU (not in universe)
+100		Single/never married
+110		Engaged
+111		Never married and never cohabited
+200		Married or consensual union
+210		Married, formally
+211		Married, civil
+212		Married, religious
+213		Married, civil and religious
+214		Married, civil or religious
+215		Married, traditional/customary
+216		Married, monogamous
+217		Married, polygamous
+219		Married, spouse absent (historical samples)
+220		Consensual union
+300		Separated/divorced/spouse absent
+310		Separated or divorced
+320		Separated or annulled
+330		Separated
+331		Separated legally
+332		Separated de facto
+333		Separated from marriage
+334		Separated from consensual union
+335		Separated from consensual union or marriage
+340		Annulled
+350		Divorced
+400		Widowed
+410		Widowed or divorced
+411		Widowed from consensual union or marriage
+412		Widowed from marriage
+413		Widowed from consensual union
+420		Widowed, divorced, or separated
+999		Unknown/missing
+
+ CONSENS		Consensual union
+1		Yes, in consensual union
+2		No, married
+8		Unknown
+9		NIU (not in universe)
+
+ BIRTHYR		Year of birth
+0000		NIU (not in universe)
+1628		1628
+1629		1629
+1630		1630
+1631		1631
+1634		1634
+1635		1635
+1636		1636
+1637		1637
+1638		1638
+1639		1639
+1640		1640
+1641		1641
+1642		1642
+1643		1643
+1644		1644
+1645		1645
+1646		1646
+1647		1647
+1648		1648
+1649		1649
+1650		1650
+1651		1651
+1652		1652
+1653		1653
+1654		1654
+1655		1655
+1656		1656
+1657		1657
+1658		1658
+1659		1659
+1660		1660
+1661		1661
+1662		1662
+1663		1663
+1664		1664
+1665		1665
+1666		1666
+1667		1667
+1668		1668
+1669		1669
+1670		1670
+1671		1671
+1672		1672
+1673		1673
+1674		1674
+1675		1675
+1676		1676
+1677		1677
+1678		1678
+1679		1679
+1680		1680
+1681		1681
+1682		1682
+1683		1683
+1684		1684
+1685		1685
+1686		1686
+1687		1687
+1688		1688
+1689		1689
+1690		1690
+1691		1691
+1692		1692
+1693		1693
+1694		1694
+1695		1695
+1696		1696
+1697		1697
+1698		1698
+1699		1699
+1700		1700
+1701		1701
+1702		1702
+1703		1703
+1704		1704
+1705		1705
+1706		1706
+1707		1707
+1708		1708
+1709		1709
+1710		1710
+1711		1711
+1712		1712
+1713		1713
+1714		1714
+1715		1715
+1716		1716
+1717		1717
+1718		1718
+1719		1719
+1720		1720
+1721		1721
+1722		1722
+1723		1723
+1724		1724
+1725		1725
+1726		1726
+1727		1727
+1728		1728
+1729		1729
+1730		1730
+1731		1731
+1732		1732
+1733		1733
+1734		1734
+1735		1735
+1736		1736
+1737		1737
+1738		1738
+1739		1739
+1740		1740
+1741		1741
+1742		1742
+1743		1743
+1744		1744
+1745		1745
+1746		1746
+1747		1747
+1748		1748
+1749		1749
+1750		1750
+1751		1751
+1752		1752
+1753		1753
+1754		1754
+1755		1755
+1756		1756
+1757		1757
+1758		1758
+1759		1759
+1760		1760
+1761		1761
+1762		1762
+1763		1763
+1764		1764
+1765		1765
+1766		1766
+1767		1767
+1768		1768
+1769		1769
+1770		1770
+1771		1771
+1772		1772
+1773		1773
+1774		1774
+1775		1775
+1776		1776
+1777		1777
+1778		1778
+1779		1779
+1780		1780
+1781		1781
+1782		1782
+1783		1783
+1784		1784
+1785		1785
+1786		1786
+1787		1787
+1788		1788
+1789		1789
+1790		1790
+1791		1791
+1792		1792
+1793		1793
+1794		1794
+1795		1795
+1796		1796
+1797		1797
+1798		1798
+1799		1799
+1800		1800
+1801		1801
+1802		1802
+1803		1803
+1804		1804
+1805		1805
+1806		1806
+1807		1807
+1808		1808
+1809		1809
+1810		1810
+1811		1811
+1812		1812
+1813		1813
+1814		1814
+1815		1815
+1816		1816
+1817		1817
+1818		1818
+1819		1819
+1820		1820
+1821		1821
+1822		1822
+1823		1823
+1824		1824
+1825		1825
+1826		1826
+1827		1827
+1828		1828
+1829		1829
+1830		1830
+1831		1831
+1832		1832
+1833		1833
+1834		1834
+1835		1835
+1836		1836
+1837		1837
+1838		1838
+1839		1839
+1840		1840
+1841		1841
+1842		1842
+1843		1843
+1844		1844
+1845		1845
+1846		1846
+1847		1847
+1848		1848
+1849		1849
+1850		1850
+1851		1851
+1852		1852
+1853		1853
+1854		1854
+1855		1855
+1856		1856
+1857		1857
+1858		1858
+1859		1859
+1860		1860
+1861		1861
+1862		1862
+1863		1863
+1864		1864
+1865		1865
+1866		1866
+1867		1867
+1868		1868
+1869		1869
+1870		1870
+1871		1871
+1872		1872
+1873		1873
+1874		1874
+1875		1875
+1876		1876
+1877		1877
+1878		1878
+1879		1879
+1880		1880
+1881		1881
+1882		1882
+1883		1883
+1884		1884
+1885		1885
+1886		1886
+1887		1887
+1888		1888
+1889		1889
+1890		1890
+1891		1891
+1892		1892
+1893		1893
+1894		1894
+1895		1895
+1896		1896
+1897		1897
+1898		1898
+1899		1899
+1900		1900
+1901		1901
+1902		1902
+1903		1903
+1904		1904
+1905		1905
+1906		1906
+1907		1907
+1908		1908
+1909		1909
+1910		1910
+1911		1911
+1912		1912
+1913		1913
+1914		1914
+1915		1915
+1916		1916
+1917		1917
+1918		1918
+1919		1919
+1920		1920
+1921		1921
+1922		1922
+1923		1923
+1924		1924
+1925		1925
+1926		1926
+1927		1927
+1928		1928
+1929		1929
+1930		1930
+1931		1931
+1932		1932
+1933		1933
+1934		1934
+1935		1935
+1936		1936
+1937		1937
+1938		1938
+1939		1939
+1940		1940
+1941		1941
+1942		1942
+1943		1943
+1944		1944
+1945		1945
+1946		1946
+1947		1947
+1948		1948
+1949		1949
+1950		1950
+1951		1951
+1952		1952
+1953		1953
+1954		1954
+1955		1955
+1956		1956
+1957		1957
+1958		1958
+1959		1959
+1960		1960
+1961		1961
+1962		1962
+1963		1963
+1964		1964
+1965		1965
+1966		1966
+1967		1967
+1968		1968
+1969		1969
+1970		1970
+1971		1971
+1972		1972
+1973		1973
+1974		1974
+1975		1975
+1976		1976
+1977		1977
+1978		1978
+1979		1979
+1980		1980
+1981		1981
+1982		1982
+1983		1983
+1984		1984
+1985		1985
+1986		1986
+1987		1987
+1988		1988
+1989		1989
+1990		1990
+1991		1991
+1992		1992
+1993		1993
+1994		1994
+1995		1995
+1996		1996
+1997		1997
+1998		1998
+1999		1999
+2000		2000
+2001		2001
+2002		2002
+2003		2003
+2004		2004
+2005		2005
+2006		2006
+2007		2007
+2008		2008
+2009		2009
+2010		2010
+2011		2011
+2012		2012
+2013		2013
+2014		2014
+2015		2015
+9999		Unknown
+
+ BIRTHMO		Month of birth
+01		January
+02		February
+03		March
+04		April
+05		May
+06		June
+07		July
+08		August
+09		September
+10		October
+11		November
+12		December
+98		Unknown
+99		NIU (not in universe)
+
+ NATIVITY		Nativity status
+0		NIU (not universe)
+1		Native-born
+2		Foreign-born
+9		Unknown/missing
+
+ BPLCOUNTRY		Country of birth
+00000		NIU (not in universe)
+10000		Africa
+11000		Eastern Africa
+11010		Burundi
+11020		Comoros
+11030		Djibouti
+11040		Eritrea
+11050		Ethiopia
+11051		Ethiopia (including Eritrea)
+11060		Kenya
+11070		Madagascar
+11080		Malawi
+11090		Mauritius
+11100		Mozambique
+11110		Reunion
+11120		Rwanda
+11130		Seychelles
+11140		Somalia
+11150		South Sudan
+11160		Uganda
+11170		Tanzania
+11180		Zambia
+11190		Zimbabwe
+11990		Eastern Africa, n.s.
+12000		Middle Africa
+12010		Angola
+12020		Cameroon
+12030		Central African Republic
+12040		Chad
+12050		Congo
+12060		Democratic Republic of Congo
+12070		Equatorial Guinea
+12080		Gabon
+12090		Sao Tome and Principe
+12990		Middle Africa, n.s.
+13000		Northern Africa
+13010		Algeria
+13011		Algeria/Tunisia
+13020		Egypt
+13021		Egypt/Sudan
+13030		Libya
+13040		Morocco
+13050		Sudan
+13060		Tunisia
+13070		Western Sahara
+13990		Northern Africa, n.s.
+14000		Southern Africa
+14010		Botswana
+14020		Lesotho
+14030		Namibia
+14040		South Africa
+14050		Swaziland
+14990		Southern Africa, n.s.
+15000		Western Africa
+15010		Benin
+15020		Burkina Faso
+15021		Upper Volta
+15030		Cape Verde
+15040		Ivory Coast
+15050		Gambia
+15060		Ghana
+15070		Guinea
+15080		Guinea-Bissau
+15081		Guinea-Bissau and Cape Verde
+15090		Liberia
+15100		Mali
+15110		Mauritania
+15120		Niger
+15130		Nigeria
+15140		St. Helena and Ascension
+15150		Senegal
+15160		Sierra Leone
+15170		Togo
+15180		Canary Islands
+15990		West Africa, n.s.
+19990		Africa, other and n.s.
+19991		Central and South Africa
+19992		East and Central Africa
+19993		Southeastern Africa
+19994		Saharan Africa
+19999		Africa, n.s.
+20000		Americas
+21000		Caribbean
+21010		Anguilla
+21020		Antigua-Barbuda
+21030		Aruba
+21040		Bahamas
+21050		Barbados
+21060		British Virgin Islands
+21070		Cayman Isles
+21080		Cuba
+21090		Dominica
+21100		Dominican Republic
+21110		Grenada
+21120		Guadeloupe
+21130		Haiti
+21140		Jamaica
+21150		Martinique
+21160		Montserrat
+21170		Netherlands Antilles
+21180		Puerto Rico
+21190		St. Kitts-Nevis
+21200		St. Croix
+21210		St. John
+21220		St. Lucia
+21230		St Thomas
+21240		St. Vincent
+21250		Trinidad and Tobago
+21260		Turks and Caicos
+21270		U.S. Virgin Islands
+21990		Other Caribbean and n.s.
+21991		Caribbean commonwealth, n.s.
+22000		Central America
+22010		Belize/British Honduras
+22020		Costa Rica
+22030		El Salvador
+22040		Guatemala
+22050		Honduras
+22060		Mexico
+22070		Nicaragua
+22080		Panama
+22081		Panama Canal Zone
+22990		Central America, n.s.
+22991		Central America and Caribbean
+23000		South America
+23010		Argentina
+23020		Bolivia
+23030		Brazil
+23040		Chile
+23050		Colombia
+23060		Ecuador
+23070		Falkland Islands
+23080		French Guiana
+23090		Guyana/British Guiana
+23100		Paraguay
+23110		Peru
+23120		Suriname
+23130		Uruguay
+23140		Venezuela
+23990		South America, other and n.s.
+23991		South America or Central America, n.s.
+23992		Central/South America and Caribbean
+24000		North America
+24010		Bermuda
+24020		Canada
+24030		Greenland
+24040		United States
+24990		North America, other and n.s.
+24991		North America/Oceania
+29990		Americas, other and n.s.
+30000		Asia
+31000		Eastern Asia
+31010		China
+31011		Hong Kong
+31012		Macau
+31013		Taiwan
+31020		Japan
+31030		Korea
+31031		Korea, DPR (North)
+31032		Korea, RO (South)
+31040		Mongolia
+31990		Eastern Asia, n.s.
+32000		South-Central Asia
+32010		Afghanistan
+32020		Bangladesh
+32030		Bhutan
+32040		India
+32041		India/Pakistan
+32042		India/Pakistan/Bangladesh/Sri Lanka
+32050		Iran
+32060		Kazakhstan
+32070		Kyrgyzstan
+32080		Maldives
+32090		Nepal
+32100		Pakistan
+32101		Pakistan/Bangladesh
+32110		Sri Lanka (Ceylon)
+32120		Tajikistan
+32130		Turkmenistan
+32140		Uzbekistan
+32999		South-Central Asia, n.s.
+33000		South-Eastern Asia
+33010		Brunei
+33020		Cambodia (Kampuchea)
+33030		East Timor
+33040		Indonesia
+33050		Laos
+33060		Malaysia
+33070		Myanmar (Burma)
+33080		Philippines
+33090		Singapore
+33100		Thailand
+33110		Vietnam
+33990		South-Eastern Asia, n.s.
+34000		Western Asia
+34010		Armenia
+34020		Azerbaijan
+34030		Bahrain
+34040		Cyprus
+34050		Georgia
+34060		Iraq
+34070		Israel
+34071		Israel/Palestine
+34080		Jordan
+34090		Kuwait
+34100		Lebanon
+34110		Palestinian Territories
+34111		West Bank
+34112		Gaza Strip
+34120		Oman
+34130		Qatar
+34140		Saudi Arabia
+34150		Syria
+34151		Syria/Lebanon
+34160		Turkey
+34170		United Arab Emirates
+34180		Yemen
+34990		Western Asia, n.s.
+34991		Middle East
+39990		Asia, other and n.s.
+39991		Central Asia and Middle East, n.s.
+39992		Far East, n.s.
+39993		Eastern/Southeast Asia, n.s.
+39994		Asia/Middle East, other and n.s.
+40000		Europe
+41000		Eastern Europe
+41010		Belarus
+41020		Bulgaria
+41021		Bulgaria/Greece
+41030		Czech Republic/Czechoslovakia
+41040		Hungary
+41050		Poland
+41060		Moldova
+41070		Romania
+41080		Russia/USSR
+41090		Slovakia
+41100		Ukraine
+41990		Eastern Europe, other and n.s.
+41991		Albania, Bulgaria, Czech, Hungary, Romania, Yugoslavia
+41992		Central-Eastern Europe
+42000		Northern Europe
+42010		Denmark
+42020		Estonia
+42030		Faroe Islands
+42040		Finland
+42050		Iceland
+42060		Ireland
+42070		Latvia
+42080		Lithuania
+42090		Norway
+42100		Svalbard and Jan Mayen Islands
+42110		Sweden
+42120		United Kingdom
+42990		Northern Europe, n.s.
+43000		Southern Europe
+43010		Albania
+43020		Andorra
+43030		Bosnia and Herzegovina
+43040		Croatia
+43050		Gibraltar
+43060		Greece
+43070		Italy
+43071		Vatican City
+43080		Malta
+43090		Portugal
+43100		San Marino
+43110		Slovenia
+43120		Spain
+43121		Spain/Portugal
+43130		Macedonia
+43140		Yugoslavia
+43141		Montenegro
+43142		Serbia
+43143		Serbia and Montenegro
+43144		Kosovo
+43990		Southern Europe, n.s.
+43991		Gibraltar/Malta
+43992		Portugal/Greece
+43993		Italy, Holy See, San Marino
+44000		Western Europe
+44010		Austria
+44020		Belgium
+44021		Belgium/Luxemburg
+44022		Belgium/Netherlands/Luxemburg
+44030		France
+44040		Germany
+44041		Germany/Austria
+44042		West Germany
+44043		Mecklenburg-Schwerin
+44050		Liechtenstein
+44060		Luxembourg
+44070		Monaco
+44080		Netherlands
+44090		Switzerland
+44990		Western Europe, n.s.
+44991		Belgium, Denmark, Luxembourg, Netherlands
+49991		Turkey and U.S.S.R.
+49992		European Union
+49993		European Union (Original 15)
+49994		Other European Union
+49995		EEA, Switzerland, associated microstates
+49999		Europe, other and n.s.
+50000		Oceania
+51000		Australia and New Zealand
+51010		Australia
+51020		New Zealand
+51030		Norfolk Islands
+51999		Australia and New Zealand, n.s.
+52000		Melanesia
+52010		Fiji
+52020		New Caledonia
+52030		Papua New Guinea
+52040		Solomon Islands
+52050		Vanuatu (New Hebrides)
+52999		Melanesia, n.s.
+53000		Micronesia
+53010		Kiribati
+53020		Marshall Islands
+53030		Nauru
+53040		Northern Mariana Isls.
+53050		Palau
+53990		Micronesia, n.e.c.
+54000		Polynesia
+54010		Cook Islands
+54020		French Polynesia
+54030		Niue
+54040		Pitcairn Island
+54050		Samoa
+54060		Eastern Samoa
+54070		Tokelau
+54080		Tonga
+54090		Tuvalu
+54100		Wallis and Futuna Isls.
+54990		Polynesia, n.s.
+55000		U.S. Pacific Possessions
+55010		American Samoa
+55020		Baker Island
+55030		Guam
+55040		Howland Island
+55050		Johnston Atoll
+55060		Kingman Reef
+55070		Midway Islands
+55080		Wake Island
+55990		Other US Pacific
+59990		Oceania, n.s.
+60000		OTHER ABROAD
+60100		U.S. Outlying Areas and Territories
+60200		Africa/Other
+60300		Central/South America or Africa
+60400		Asia/Africa
+60500		Europe, Australia, New Zealand
+60600		Other commonwealth
+60700		Asia, Australia, Oceania, n.s.
+69900		Other countries, not specified
+80000		AT SEA
+99999		Unknown
+
+ CITIZEN		Citizenship
+1		Citizen, not specified
+2		Citizen by birth
+3		Naturalized citizen
+4		Not a citizen
+5		Without citizenship, stateless
+8		Unknown
+9		NIU (not in universe)
+
+ BPLHN1		Department of birth, Honduras
+01		Atlantida
+02		Colon
+03		Comayagua
+04		Copan
+05		Cortes
+06		Choluteca
+07		El Paraiso
+08		Francisco Morazan
+09		Gracias a Dios
+10		Intibuca
+11		Islas de la Bahia
+12		La Paz
+13		Lempira
+14		Ocotopeque
+15		Olancho
+16		Santa Barbara
+17		Valle
+18		Yoro
+98		Foreign Born
+99		Unknown
+
+ BPLHN2		Municipality of birth, Honduras
+0101		La Ceiba
+0102		El Porvenir
+0103		Esparta
+0104		Jutiapa
+0105		La Masica
+0106		San Francisco
+0107		Tela
+0108		Arizona
+0199		Atlantida department, unknown municipality
+0201		Trujillo
+0202		Balfate
+0203		Iriona
+0204		Limón
+0205		Sabá
+0206		Santa Fe
+0207		Santa Rosa de Aguán
+0208		Sonaguera
+0209		Tocoa
+0210		Bonito Oriental
+0299		Colon department, unknown municipality
+0301		Comayagua
+0302		Ajuterique
+0303		El Rosario
+0304		Esquías
+0305		Humuya
+0306		La Libertad
+0307		Lamaní
+0308		La Trinidad
+0309		Lejamaní
+0310		Meámbar
+0311		Minas de Oro
+0312		Ojos de Agua
+0313		San Jerónimo
+0314		San José de Comayagua
+0315		San José del Potrero
+0316		San Luis
+0317		San Sebastián
+0318		Siguatepeque
+0319		Villa de San Antonio
+0320		Las Lajas
+0321		Taulabé
+0399		Comayagua department, unknown municipality
+0401		Santa Rosa de Copán
+0402		Cabañas
+0403		Concepción
+0404		Copán Ruinas
+0405		Corquín
+0406		Cucuyagua
+0407		Dolores
+0408		Dulce Nombre
+0409		El Paraíso
+0410		Florida
+0411		La Jigua
+0412		La Unión
+0413		Nueva Arcadia
+0414		San Agustín
+0415		San Antonio
+0416		San Jerónimo
+0417		San José
+0418		San Juan de Opoa
+0419		San Nicolás
+0420		San Pedro
+0421		Santa Rita
+0422		Trinidad de Copán
+0423		Veracruz
+0499		Copan department, unknown municipality
+0501		San Pedro Sula
+0502		Choloma
+0503		Omoa
+0504		Pimienta
+0505		Potrerillos
+0506		Puerto Cortés
+0507		San Antonio de Cortés
+0508		San Francisco de Yojoa
+0509		San Manuel
+0510		Santa Cruz de Yojoa
+0511		Villanueva
+0512		La Lima
+0599		Cortes department, unknown municipality
+0601		Choluteca
+0602		Apacilagua
+0603		Concepción de Maria
+0604		Duyure
+0605		El Corpus
+0606		El Triunfo
+0607		Marcovia
+0608		Morolica
+0609		Namasigue
+0610		Orocuina
+0611		Pespire
+0612		San Antonio de Flores
+0613		San Isidro
+0614		San José
+0615		San Marcos de Colon
+0616		Santa Ana de Yusguare
+0699		Choluteca department, unknown municipality
+0701		Yuscarán
+0702		Alauca
+0703		Danlí
+0704		El Paraíso
+0705		Güinope
+0706		Jacaleapa
+0707		Liure
+0708		Morocelí
+0709		Oropolí
+0710		Potrerillos
+0711		San Antonio de Flores
+0712		San Lucas
+0713		San Matías
+0714		Soledad
+0715		Teupasenti
+0716		Texiguat
+0717		Vado Ancho
+0718		Yauyupe
+0719		Trojes
+0799		El Paraiso department, unknown municipality
+0801		Distrito Central
+0802		Alubaren
+0803		Cedros
+0804		Curarén
+0805		El Porvenir
+0806		Guaimaca
+0807		La Libertad
+0808		La Venta
+0809		Lepaterique
+0810		Maraita
+0811		Marale
+0812		Nueva Armenia
+0813		Ojojona
+0814		Orica
+0815		Reitoca
+0816		Sabanagrande
+0817		San Antonio de Oriente
+0818		San Buenaventura
+0819		San Ignacio
+0820		San Juan de Flores
+0821		San Miguelito
+0822		Santa Ana
+0823		Santa Lucía
+0824		Talanga
+0825		Tatumbla
+0826		Valle de Angeles
+0827		Villa de San Francisco
+0828		Vallecillo
+0899		Francisco Morazan department, unknown municipality
+0901		Puerto Lempira
+0902		Brus Laguna
+0903		Ahuas
+0904		Juan Francisco Bulnes
+0905		Villeda Morales
+0906		Wampusirpi
+0999		Gracias a Dios department, unknown municipality
+1001		La Esperanza
+1002		Camasca
+1003		Colomoncagua
+1004		Concepción
+1005		Dolores
+1006		Intibucá
+1007		Jesús de Otoro
+1008		Magdalena
+1009		Masaguara
+1010		San Antonio
+1011		San Isidro
+1012		San Juan
+1013		San Marcos de La Sierra
+1014		San Miguelito
+1015		Santa Lucía
+1016		Yamaranguila
+1017		San Francisco de Opalaca
+1099		Intibuca department, unknown municipality
+1101		Roatán
+1102		Guanaja
+1103		José Santos Guardiola
+1104		Utila
+1199		Islas de la Bahia department, unknown municipality
+1201		La Paz
+1202		Aguanqueterique
+1203		Cabañas
+1204		Cane
+1205		Chinacla
+1206		Guajiquiro
+1207		Lauterique
+1208		Marcala
+1209		Mercedes de Oriente
+1210		Opatoro
+1211		San Antonio del Norte
+1212		San José
+1213		San Juan
+1214		San Pedro de Tutule
+1215		Santa Ana
+1216		Santa Elena
+1217		Santa María
+1218		Santiago de Puringla
+1219		Yarula
+1299		La Paz department, unknown municipality
+1301		Gracias
+1302		Belén
+1303		Candelaria
+1304		Cololaca
+1305		Erandique
+1306		Gualcince
+1307		Guarita
+1308		La Campa
+1309		La Iguala
+1310		Las Flores
+1311		La Unión
+1312		La Virtud
+1313		Lepaera
+1314		Mapulaca
+1315		Piraera
+1316		San Andrés
+1317		San Francisco
+1318		San Juan Guarita
+1319		San Manuel Colohete
+1320		San Rafael
+1321		San Sebastián
+1322		Santa Cruz
+1323		Talgua
+1324		Tambla
+1325		Tomalá
+1326		Valladolid
+1327		Virginia
+1328		San Marcos de Caiquin
+1399		Lempira department, unknown municipality
+1401		Ocotepeque
+1402		Belén Gualcho
+1403		Concepción
+1404		Dolores Merendón
+1405		Fraternidad
+1406		La Encarnación
+1407		La Labor
+1408		Lucerna
+1409		Mercedes
+1410		San Fernando
+1411		San Francisco del Valle
+1412		San Jorge
+1413		San Marcos
+1414		Santa Fe
+1415		Sensenti
+1416		Sinuapa
+1499		Ocotepeque department, unknown municipality
+1501		Juticalpa
+1502		Campamento
+1503		Catacamas
+1504		Concordia
+1505		Dulce Nombre de Culmí
+1506		El Rosario
+1507		Esquipulas del Norte
+1508		Gualaco
+1509		Guarizama
+1510		Guata
+1511		Guayape
+1512		Jano
+1513		La Unión
+1514		Mangulile
+1515		Manto
+1516		Salamá
+1517		San Esteban
+1518		San Francisco de Becerra
+1519		San Francisco de La Paz
+1520		Santa María del Real
+1521		Silca
+1522		Yocón
+1523		Patuca
+1599		Olancho department, unknown municipality
+1601		Santa Bárbara
+1602		Arada
+1603		Atima
+1604		Azacualpa
+1605		Ceguaca
+1606		Concepción del Norte
+1607		Concepción del Sur
+1608		Chinda
+1609		El Níspero
+1610		Gualala
+1611		Ilama
+1612		Macuelizo
+1613		Naranjito
+1614		Nuevo Celilac
+1615		Petoa
+1616		Protección
+1617		Quimistán
+1618		San Francisco de Ojuera
+1619		San José de Colinas
+1620		San Luis
+1621		San Marcos
+1622		San Nicolás
+1623		San Pedro Zacapa
+1624		San Vicente Centenario
+1625		Santa Rita
+1626		Trinidad
+1627		Las Vegas
+1628		Nueva Frontera
+1699		Santa Barbara department, unknown municipality
+1701		Nacaome
+1702		Alianza
+1703		Amapala
+1704		Aramecina
+1705		Caridad
+1706		Goascorán
+1707		Langue
+1708		San Francisco de Coray
+1709		San Lorenzo
+1799		Valle department, unknown municipality
+1801		Yoro
+1802		Arenal
+1803		El Negrito
+1804		El Progreso
+1805		Jocón
+1806		Morazán
+1807		Olanchito
+1808		Santa Rita
+1809		Sulaco
+1810		Victoria
+1811		Yorito
+1899		Yoro department, unknown municipality
+9998		Foreign born
+9999		Unknown
+
+ SCHOOL		School attendance
+0		NIU (not in universe)
+1		Yes
+2		No, not specified
+3		No, attended in the past
+4		No, never attended
+9		Unknown/missing
+
+ LIT		Literacy
+0		NIU (not in universe)
+1		No, illiterate
+2		Yes, literate
+9		Unknown/missing
+
+ EDATTAIN		Educational attainment, international recode [general version]
+0		NIU (not in universe)
+1		Less than primary completed
+2		Primary completed
+3		Secondary completed
+4		University completed
+9		Unknown
+
+ EDATTAIND		Educational attainment, international recode [detailed version]
+000		NIU (not in universe)
+100		Less than primary completed (n.s.)
+110		No schooling
+120		Some primary completed
+130		Primary (4 yrs) completed
+		PRIMARY COMPLETED, LESS THAN SECONDARY
+		Primary completed
+211		Primary (5 yrs) completed
+212		Primary (6 yrs) completed
+		Lower secondary completed
+221		Lower secondary general completed
+222		Lower secondary technical completed
+		SECONDARY COMPLETED
+		General or unspecified track
+311		Secondary, general track completed
+312		Some college completed
+320		Secondary or post-secondary technical completed
+321		Secondary, technical track completed
+322		Post-secondary technical education
+400		University completed
+999		Unknown/missing
+
+ YRSCHOOL		Years of schooling
+00		None or pre-school
+01		1 year
+02		2 years
+03		3 years
+04		4 years
+05		5 years
+06		6 years
+07		7 years
+08		8 years
+09		9 years
+10		10 years
+11		11 years
+12		12 years
+13		13 years
+14		14 years
+15		15 years
+16		16 years
+17		17 years
+18		18 years or more
+90		Not specified
+91		Some primary
+92		Some technical after primary
+93		Some secondary
+94		Some tertiary
+95		Adult literacy
+96		Special education
+98		Unknown/missing
+99		NIU (not in universe)
+
+ EDUCHN		Educational attainment, Honduras
+000		NIU (not in universe)
+110		None
+120		Preschool
+130		Literacy courses
+		Primary education
+201		Primary, grade 1
+202		Primary, grade 2
+203		Primary, grade 3
+204		Primary, grade 4
+205		Primary, grade 5
+206		Primary, grade 6
+210		Primary, grade unknown
+		Common cycle
+301		Common cycle, year 1
+302		Common cycle, year 2
+303		Common cycle, year 3
+		Diversified cycle
+311		Diversified cycle, year 1
+312		Diversified cycle, year 2
+313		Diversified cycle, year 3
+314		Diversified cycle, year 4
+		Post-secondary
+400		Higher education
+401		Higher education, year 1
+402		Higher education, year 2
+403		Higher education, year 3
+404		Higher education, year 4
+405		Higher education, year 5
+406		Higher education, year 6
+407		Higher education, year 7+
+408		Higher education, year unknown
+500		Non-university
+501		Non-university, year 1
+502		Non-university, year 2
+503		Non-university, year 3
+504		Non-university, year 4
+505		Non-university, year 5
+600		University
+601		University, year 1
+602		University, year 2
+603		University, year 3
+604		University, year 4
+605		University, year 5
+606		University, year 6
+607		University, year 7
+610		Graduate studies
+611		Graduate, year 1
+612		Graduate, year 2
+613		Graduate, year 3
+614		Graduate, year 4
+615		Graduate, year 5
+998		Unknown
