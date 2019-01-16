@@ -1,6 +1,6 @@
 # Investigating whether education results in migration from rural to urban areas
 
-This project is quick look at the above question, using Honduras census data. The report containing results is in `./out/summary.html`.
+This project is quick look at the above question, using Honduras census data. A PDF report containing results is provided at `./summary.pdf`.
 
 ## Replicating
 
