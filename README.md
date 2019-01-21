@@ -9,3 +9,16 @@ All code is in `./source/`, all data (both original and outputted) is in `./data
 Original data is downloaded from IPUMS-international, and therefore cannot be disseminated here. All microdata has been removed from the public project. However, the codebook is provided at `./ipumsi_00002.txt` for easy replication. The downloaded IPUMS data should be placed in the `./data/` directory.
 
 After downloading, just run the `./source/run.sh` file and look for the rendered report in `./out/summary.html`.
+
+## Required Packages
+
+R:
+
+- `data.table`
+- `magrittr`
+- `ggplot2`
+- `rmarkdown`
+
+Stata:
+
+- `esttab`
