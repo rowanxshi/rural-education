@@ -2,7 +2,6 @@
 title: "Why are urban areas more educated?"
 author: "Rowan Shi"
 date: '2019-01-15'
-output: html_document
 ---
 
 ```{r run-source, include=FALSE}
@@ -16,7 +15,7 @@ When asked, most people might guess that the population in urban areas is more e
 * for some reason, those born in urban areas achieve higher levels of education; or
 * those who achieve higher levels of education move to urban areas (or those who achieve lower levels move to rural areas).
 
-In other words, is the difference due to those native to the urban (or rural) area, or is it due to those who move there later in life? The answer is important: common wisdom and policy prescribe education as a way out for those living in rural areas, which tend to be poorer.
+In other words, the difference could be attributable to those native to the urban (or rural) area, or to those who move there later in life. The distinction is important: common wisdom and policy prescribe education as a way out for those living in rural areas, which tend to be poorer.
 
 In this exercise, I use Honduras census data (taken in 1974, 1988, and 2001) to investigate this question.
 
@@ -37,12 +36,12 @@ There are several patterns to notice immediately:
 * in all years, the population of rural areas is less educated than the population of urban areas; and
 * over time, educational attainment has been increasing for both rural and urban areas.
 
-A closer look reveals that, while both types of areas have seen increasing educational attainment, there is a difference in the types of degrees. *The main push in rural areas has been primary school certification. On the other hand, urban areas have also seen increases in share of population holding middle and high school diplomas.*
+A closer look reveals that, while both types of areas have seen increasing educational attainment, there is a difference in the types of degrees. *The main change in rural areas has been primary school certification. On the other hand, urban areas have also seen increases in share of population holding middle and high school diplomas.*
 
 ### Educational attendance
 Working towards the goal of separating the two explanations, let's now turn to educational attendance, calculated as the percentage of people who report they are in school.
 
-The census unfortunately does not ask what level of school the respondant is attending, so instead I divide the population into age categories. The Honduras educational system consists of 6 years for primary school, 3 years for middle school, and 3 years for high school. Schooling generally starts at age 5. Consequently, the age categories are defined based on a child who begins school at age 5 and completes each degree in sequence without skipping or repeating years. For example, someone who is 7 years old would be classified as "primary school aged".
+The census unfortunately does not ask what level of school the respondant is attending, so instead I divide the population into age categories. The Honduras educational system consists of 6 years for primary school, 3 years for middle school, and 3 years for high school. Schooling generally starts at age 5. Consequently, the age categories are defined based on a child who begins school at age 5 and completes each degree in sequence without skipping or repeating years. For example, a respondant who is 7 years old would be classified as "primary school aged".
 
 Observations are divided into age groups, and the share of each age group that is attending school is shown in the graphs below. Again, the changes over time are displayed on the right.
 
@@ -53,10 +52,10 @@ source("../source/graph_educ_attend.r")
 Here, we see that attendance is also rather low (especially after primary school), but that it's higher in urban areas and also over time. Similarly to educational attainment, the composition of the changes over time for educational attendance vary across urban and rural areas. *In particular, from 1974 to 1988, the share of middle and high school aged children increased by much more in rural areas than in urban areas.*
 
 ### The first clue
-As discovered above, there was a increase in rural middle school and high school attendance over the 1974 to 1988 period, which was more pronounced than the change in urban areas. However, from 1988 to 2001, urban areas experienced an increase in residents holding middle and high school diplomas. This descriptive analysis is suggestive that common sense is correct: more education can help those born in rural areas move to urban areas.
+As uncovered above, there was a increase in rural middle school and high school attendance over the 1974 to 1988 period, which was more pronounced than the change in urban areas. However, from 1988 to 2001, urban areas experienced an increase in residents holding middle and high school diplomas. This descriptive analysis is suggestive that the second explanation could have some bite -- educated people move to urban areas. If that is the case, common sense and policy are more justified: more education can help those born in rural areas move to urban areas.
 
 ## Regression analysis
-While the descriptive analysis is provocative, it doesn't guarantee that implementing better education in rural areas means more migration towards urban areas. For example, those who stay in school could be different from the rest of the population, and they would have gone to school to move to the city no matter how tough the educational conditions. In this case, it could be possible that improving education will have no impact on outcomes.
+While the descriptive analysis is provocative, it doesn't guarantee that implementing better education in rural areas means more migration towards urban areas. For example, those who stay in school could be different from the rest of the population, and they would have gone to school to move to the city no matter how tough the educational conditions. Put another way, those who stay in school longer are a special self-selected population. In this case, it could be possible that improving education will have no impact on outcomes for others in the population.
 
 ### Experimental design
 ``` {r load-muni, include=FALSE}
@@ -66,7 +65,7 @@ load("../data/d_educ_attend_muni.Rdata")
 
 The broad sample I consider is the set of individuals questioned in the 2001 census, while the outcome of interest is whether they live in an urban or rural area. In particular, the experiment should examine whether education (measured as years of schooling) has an effect on the outcome, especially for those born in rural areas.
 
-To try to establish a causal link, I will use the educational conditions of a person's birthplace. In particular, the graphs above belie considerable variation at the municipality level of the change in educational attendance. 
+To try to establish a causal link, I will use the educational conditions of a person's birthplace. In particular, the graphs above belie considerable variation at the municipality level of the change in educational attendance.
 
 I begin by calculating the same statistic as before, changes in educational attendance by age group, but at the municipality level. The censes provide `r length(unique(d_educ_attend_muni$geo2_hn))` municipality areas, most containing both rural and urban areas. The table below shows the standard deviation in these changes, by age group.
 
@@ -101,23 +100,22 @@ The results of the regression are as follows:
 htmltools::includeHTML("./reg_table.html")
 ```
 
-
 The first row shows that each additional school year adds about a 5.4 percentage point chance the individual lives in an urban area in 2001. The second line addresses the original question: if the person was born in a rural area, how much more does education increase this likelihood?
 
 How do we interpret the 0.055 coefficient? Consider two people, one whose birth municipality had a 70-30 urban-rural breakdown (A), and the other whose birth municipality had a 60-40 split (B). If A and B are identical along the other dimensions in the regression (years of schooling, age, gender, and maritial status), then each year of schooling increases B's likelihood of living in an urban area by 0.55 percentage points more than it does for A.
 
-The remaining rows show coefficient values for the controls. Women are more likely to live in urban areas than men, while maritial status does not seem to have much of an effect. Finally, those both in a more rural area have a lower chance of living in an urban area -- consistent with the idea that rural-born individuals "need" something like eduation to make their way out.
+The remaining rows show coefficient values for the controls. Women are more likely to live in urban areas than men, while maritial status does not seem to have much of an effect. Finally, those both in a more rural area have a lower chance of living in an urban area -- consistent with the idea that rural-born individuals "need" something like education to make their way out.
 
 ## The final take
 
 From this quick dive into the Honduras census data, we observed that urban areas tend to have more educated residents than rural areas, that this pattern is strengthening over time, but that rural areas seem to be catching up in terms of educational attendance. After a closer look, there seems to be support that rural-born educated people are moving to urban areas more than their rural-born uneducated counterparts.
 
-Since we used variation in a person's birthplace (and that birthplace's educational environment) as the source of variation in our experimental design, there is more confidence the interpretation that this link is causal -- that is, education *causes* or helps rural-born people to move to urban areas.
+Since we used variation in a person's birthplace (and that birthplace's educational environment) as the source of variation in our experimental design, there is more confidence in the interpretation that this link is causal -- that is, more education *causes* or helps rural-born people move to urban areas.
 
 ## Notes on limitations
 
-This exercise is limited by data availability. Ideally, the sample should consist of people for whom the 1974-1988 period occurred before they became school age; that is, before they were 5 years old. However, with the current data, it is not possible to use such a sample since it must also be that those studied are over 17. These two restrictions cannot both be achieved using the 2001 census. Honduras conducted its next census in 2013; this data would be ideal, but the microdata has been elusive.
+This exercise is limited by data availability. Ideally, the sample should consist of people for whom the 1974-1988 period occurred before they became school age; that is, before they were 5 years old. However, with the current data, it is not possible to use such a sample since it must also be that those included in the sample are over 17. These two restrictions cannot both be achieved using the 2001 census. Honduras conducted its next census in 2013; this data would be ideal, but the microdata has been elusive.
 
-In addition, if the people studied provided details on whether they were born in a rural or urban area, then the municipality "rural-ness" would not be needed to proxy for this measure. Likewise, providing information on which level of school those in school are attending would do away with the education age group approximations.
+In addition, if the respondants provided details on whether they were born in a rural or urban area, then the "rural-ness" of birthplace municipality would not be needed to proxy for this measure. Likewise, providing information on which level of school those in school are attending would do away with the education age group approximations.
 
-Finally, the regression estimated is a linear probability model. While a model like logit or probit could be estimated, these are more sensitive to specification and suffer from inconsistency in these situations. The linear probability model performs worse near values of 0 or 1, but does well near the center. The coefficient results are therefore better interpreted as "average effects".
+Finally, the regression estimated is a linear probability model. While a model like logit or probit could be estimated, these are more sensitive to specification and suffer from inconsistency in these situations. The linear probability model performs worse near values of 0 or 1, but does well near the center. The coefficient results are therefore better interpreted as "average effects" over the sample population.
