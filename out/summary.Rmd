@@ -82,7 +82,6 @@ Due to this choice of instrument, the sample is restricted to exclude anyone for
 ### Regression
 
 The final regression is a linear probability model with 1 indicating the person lives in an urban area, as below:
-
 $$
 \text{urban} = \alpha_0 + \alpha_{a_1}\text{age} + \alpha_{a_2}\text{age}^2 + \alpha_{bpr}\text{bpr} + \alpha_{e}\text{school} + \alpha_{bpr,e}(\text{bpr}*\text{school}) + \varepsilon
 $$
@@ -96,9 +95,10 @@ Again, the variable $\text{school}$ is instrumented with the four variables repr
 
 The results of the regression are as follows:
 
-```{r, echo = FALSE}
+<!-- ```{r, echo = FALSE}
 htmltools::includeHTML("./reg_table.html")
-```
+``` -->
+\include{reg_table}
 
 The first row shows that each additional school year adds about a 5.4 percentage point chance the individual lives in an urban area in 2001. The second line addresses the original question: if the person was born in a rural area, how much more does education increase this likelihood?
 
