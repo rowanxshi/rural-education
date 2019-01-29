@@ -15,9 +15,7 @@ After downloading, just run the `./source/run.sh` file and look for the rendered
 R:
 
 - `data.table`
-- `magrittr`
-- `ggplot2`
-- `rmarkdown`
+- `tidyverse` (specifically `magrittr`, `ggplot2`, and `rmarkdown`)
 
 Stata:
 
