@@ -119,3 +119,7 @@ This exercise is limited by data availability. Ideally, the sample should consis
 In addition, if the respondants provided details on whether they were born in a rural or urban area, then the "rural-ness" of birthplace municipality would not be needed to proxy for this measure. Likewise, providing information on which level of school those in school are attending would do away with the education age group approximations.
 
 Finally, the regression estimated is a linear probability model. While a model like logit or probit could be estimated, these are more sensitive to specification and suffer from inconsistency in these situations. The linear probability model performs worse near values of 0 or 1, but does well near the center. The coefficient results are therefore better interpreted as "average effects" over the sample population.
+
+## References
+
+Minnesota Population Center. Integrated Public Use Microdata Series, International: Version 7.1 [dataset]. Minneapolis, MN: IPUMS, 2018. https://doi.org/10.18128/D020.V7.1
